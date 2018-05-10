@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<head>
+	<title>Order - ReStock</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<!-- CSS Styles-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" type="image/png" href="Assets/logo4.png">
+	<!-- JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--ViewPort -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+</head>
+<body>
+	<div class="bgAdmin">
+  <nav>
+    <div class="nav-wrapper">
+      <img class="" src="Assets/navbar.png">
+    </div>
+  </nav> 
+  <div class="container">
+  	 <div class="row">
+  		<div class="col s12 m12 l12 xl12"><h3>Producto</h3></div>
+  	</div>
+  	<div class="row">
+  		<div class="col s12 m12 l3 xl3 input-field">
+  		  <input id="marca" type="text" class="validate">
+          <label for="first_name">Marca</label>
+      </div>
+  		<div class="col s12 m12 l3 xl3 input-field">
+  			<input id="nombreComercial" type="text" class="validate">
+          	<label for="first_name">Nombre Comercial</label>
+  		</div>
+  		<div class="col s12 m12 l3 xl3 input-field">
+  			<input id="descripcion" type="text" class="validate">
+          	<label for="first_name">Descripción</label>
+  		</div>
+  		<div class="col s12 m12 l3 xl3 input-field">
+  			<input id="detalle" type="text" class="validate">
+          	<label for="first_name">Detalle</label>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col s12 m12 l3 xl3 input-field">
+  			<input id="porcAlcohol" type="text" class="validate">
+          	<label for="first_name">Porcentaje de Alcohol</label>
+  		</div>
+  		<div class="col s12 m12 l3 xl3 input-field">
+  			<input id="vaCon" type="text" class="validate">
+          	<label for="first_name">Va con...</label>
+  		</div>
+  		<div class="col s12 m12 l3 xl3 input-field">
+  			<input id="uva" type="text" class="validate">
+          	<label for="first_name">Uva</label>
+  		</div>
+  		<div class="col s12 m12 l3 xl3 input-field">
+  			<input id="cantidad" type="text" class="validate">
+          	<label for="first_name">Cantidad</label>
+  		</div>
+  	</div>
+    <div class="row">
+      <div class="col s12 m12 l3 xl3 input-field">
+        <input id="precio" type="text" class="validate">
+            <label for="precio">Precio</label>
+      </div>
+      <div class="col s12 m12 l3 xl3 input-field">
+        <input id="anio" type="text" class="validate">
+            <label for="anio">Año</label>
+      </div>
+    </div>
+  	<div class="row">
+  		<div class="col s12 m12 l6 xl6 file-field input-field">
+	      <div class="btn">
+	        <span>Imagen</span>
+	        <input type="file" id="prodcutoImagen">
+	      </div>
+	      <div class="file-path-wrapper">
+	        <input class="file-path validate" type="text" id="producto ">
+	      </div>
+  		</div>
+      <div class="col s12 m12 l6 xl6 input-field">
+          <input id="textproductoImagen" name="textproductoImagen" placeholder="Url de la Imagen">
+      </div>
+  	</div>
+
+  	<div class="row">
+  		<div class="col s12 m12 l12 xl12"><h3>Lugar de Origen</h3></div>
+  	</div>
+       <div class="row">
+        <div class="col s12 m12 l6 xl6 input-field">
+          <input id="lugardeOrigen" type="text" class="validate">
+              <label for="first_name">Lugar de Origen</label>
+        </div>
+    </div>
+  	<div class="row">
+  		<div class="col s12 m12 l6 xl6 file-field input-field">
+	      <div class="btn">
+	        <span>Imagen</span>
+	        <input type="file" id="imagenLugardeOrigen">
+	      </div>
+	      <div class="file-path-wrapper">
+	        <input class="file-path validate" type="text" id="textoLugardeOrigen">
+	      </div>
+  		</div>
+      <div class="col s12 m12 l6 xl6 input-field">
+          <input id="textLugarOrigen" name="textLugarOrigen" placeholder="Url de la Imagen">
+      </div>
+  	</div>
+  	<div class="row">
+  		<div class="col s12 m12 l12 xl12"><h3>Tipo</h3></div>
+  	</div>
+    <div class="row">
+      <div class="col s12 m12 l6 xl6 input-field">
+        <input id="tipo" type="text" class="validate">
+            <label for="first_name">Tipo</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l6 xl6 file-field input-field">
+        <div class="btn">
+          <span>Imagen</span>
+          <input type="file" id="imagenTipo">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" id="textoTipo">
+        </div>
+      </div>
+      <div class="col s12 m12 l6 xl6 input-field">
+          <input id="textImagenTipo" name="textImagenTipo" placeholder="Url de la Imagen">
+      </div>
+    </div>
+    <div class="row">
+     <div class="col s12 m12 l12 xl12"><h3>Categoria</h3></div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l6 xl6 input-field">
+          <input id="categoria" type="text" class="validate">
+              <label for="first_name">Nombre de la categoria</label>
+        </div>
+    </div>
+  	<div class="row">
+  		<div class="col s12 m12 l6 xl6 file-field input-field">
+	      <div class="btn">
+	        <span>Imagen</span>
+	        <input type="file" id="imagenCategoria">
+	      </div>
+	      <div class="file-path-wrapper">
+	        <input class="file-path validate" type="text" id="textoCategoria">
+	      </div>
+  		</div>
+      <div class="col s12 m12 l6 xl6 input-field">
+          <input id="textImagenCategoria" name="textImagenCategoria" placeholder="Url de la Imagen">
+      </div>
+  	</div>
+
+  	 <div class="row" style="margin:0;">
+    <div class="col s12" style="margin-top: 30px; margin-bottom: 30px;">
+      <a class="btn waves-effect waves-light btn-large" id="sendButton"><i class="material-icons right">backup</i>Registrar Producto</a>
+    </div>
+  </div>  
+</div>
+
+
+<script src="js/admin.js"></script>
+<script src="js/js/materialize.js"></script>
+<script src="js//js/materialize.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Inicio de Sesión - ReStock</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<!-- CSS Styles-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--ViewPort -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="Assets/logo4.png">
+</head>
+<body>
+<div class="bg">
+		<div class="row">
+			<div class="col s12" style="margin-top: 25px;">
+				<img class="responsive-img logoDisplay" src="Assets/logo3.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6 offset-s3 input-field">
+				<input id="user" type="text" class="validate">
+          		<label for="user">User</label>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="input-field col s6 offset-s3 input-field">
+				<input id="pass" type="password" class="validate">
+          		<label for="password">Password</label>
+			</div>
+			
+		</div>
+		<div class="row" style="margin-bottom: 0;">
+			<div class="input-field col s6 offset-s3">
+				  <button class="btn waves-effect waves-light btn-large sendButton" type="submit" name="action" id="sendButton" onclick="validate()">Login
+    				<i class="material-icons right">send</i>
+  				  </button>
+			</div>
+		</div>
+</div>
+
+
+<!-- JavaScript Framework -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/js/materialize.js"></script>
+<script src="js//js/materialize.min.js"></script>
+<script>
+	var user = document.getElementById('user');
+	password = document.getElementById('pass');
+	sendButton = document.getElementById('sendButton');
+
+	function validate(){
+		if( user.value == "admin" && password.value == "admin"){
+				window.location.href = "detail.html";
+		}
+		else{
+			swal("Usuario incorrecto!");
+		}
+	}
+</script>
+</body>
+</html>
